@@ -20,3 +20,23 @@ jobs:
     steps:
       - name: Imprime data atual
         run: date
+        
+  imprime_data_macos:
+      name: Imprime data atual - macOS
+      runs-on: macos-latest
+    
+      steps:
+      - name: Imprime data atual
+        run: date
+        
+  imprime_data_unbuntu2:
+    name: Imprime data atual - Ubuntu2
+    runs-on: ubuntu-latest
+    needs:
+      - imprime_data_ubuntu
+      - imprime_data_windows
+      - imprime_data_macos
+        
+    steps:
+      - name: Imprime data atual - Ubuntu2
+        run: date
