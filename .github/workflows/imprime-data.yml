@@ -5,9 +5,9 @@ on:
   
 jobs:
   imprime_data_ubuntu:
-  name: Imprime data atual
-  runs-on: ubuntu-latest
+    name: Imprime data atual
+    runs-on: ubuntu-latest
   
-  steps:
-    - name: Imprime data atual - Ubuntu
-      run: date
+    steps:
+      - name: Imprime data atual - Ubuntu
+        run: date
