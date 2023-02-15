@@ -4,7 +4,7 @@ on:
   push:
   
 env:
-  VARIAVEL_1: Silas Gabriel
+  VARIAVEL_1: Joao da Silva Sauro
   VARIAVEL_2: Sao Paulo
 
 jobs:
