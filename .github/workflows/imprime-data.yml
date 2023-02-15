@@ -5,9 +5,17 @@ on:
   
 jobs:
   imprime_data_ubuntu:
-    name: Imprime data atual
+    name: Imprime data atual Ubuntu
     runs-on: ubuntu-latest
   
     steps:
-      - name: Imprime data atual - Ubuntu
+      - name: Imprime data atual
+        run: date
+        
+  imprime_data_windows:
+    name: Imprime data atual Windows
+    runs-on: windows-latest
+  
+    steps:
+      - name: Imprime data atual
         run: date
